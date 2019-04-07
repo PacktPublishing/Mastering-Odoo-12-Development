@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="school assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/school/static/src/js/teacher_action.js"></script>
+            <script type="text/javascript" src="/school/static/tests/tour.js"></script>
+            <link rel="stylesheet" type="text/scss" href="/school/static/src/scss/school.scss"/>
+        </xpath>
+    </template>
+
+    <template id="qunit_suite" name="school tests" inherit_id="web.qunit_suite">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/school/static/tests/school_tests.js"></script>
+        </xpath>
+    </template>
+</odoo>
