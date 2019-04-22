@@ -1,7 +1,7 @@
 {
     'name': 'School Management',
     'author': 'Damien Bouvy',
-    'version': '1.0',
+    'version': '1.1',
     'license': 'Other OSI approved licence',
     'category': 'School',
     'summary': 'Manage students, classes and all school related stuff!',

@@ -5,6 +5,7 @@ from odoo.tools import create_index
 
 class SchoolGroup(models.Model):
     _name = "school.group"
+    _inherit = ["mail.thread"]
     _description = "Group"
 
     def _default_supervisor_id(self):
@@ -20,7 +21,7 @@ class SchoolGroup(models.Model):
     student_count = fields.Integer(
         string="Number of Students",
         compute="_compute_student_count",
-        search="_search_student_count",
+        store=True,
     )
     supervisor_id = fields.Many2one(
         "res.partner",

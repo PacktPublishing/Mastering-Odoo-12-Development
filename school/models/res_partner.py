@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    name = fields.Char(label='zboub')
     student = fields.Boolean()
     teacher = fields.Boolean()
     school_group_id = fields.Many2one(
@@ -34,7 +35,7 @@ class ResPartner(models.Model):
         inverse="_inverse_member_for",
     )
     student_type = fields.Selection(
-        [("free", "Free"), ("full", "Full")], default="full"
+        [("free", "Free"), ("full", "Full"), ('employee', 'Employee')], default="full"
     )
 
     @api.depends("inscription_date")
