@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_school_user,School Group: User,model_school_group,school.group_user,1,0,0,0
-access_school_manager,School Group: Manager,model_school_group,school.group_user,1,1,1,1
-access_school_option_user,School Option: User,model_school_option,school.group_user,1,0,0,0
-access_school_option_manager,School Option: Manager,model_school_option,school.group_user,1,1,1,1
